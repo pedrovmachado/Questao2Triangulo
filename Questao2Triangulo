@@ -1,0 +1,30 @@
+Scanner input = new Scanner(System.in);
+		
+		        
+		        System.out.println("Digite o comprimento do primeiro lado do triângulo:");
+		        double lado1 = input.nextDouble();
+		        
+		        System.out.println("Digite o comprimento do segundo lado do triângulo:");
+		        double lado2 = input.nextDouble();
+		        
+		        System.out.println("Digite o comprimento do terceiro lado do triângulo:");
+		        double lado3 = input.nextDouble();
+		        
+		        if (isTrianguloValido(lado1, lado2, lado3)) {
+		            String classificacao = classificarTriangulo(lado1, lado2, lado3);
+		            System.out.println("O triângulo é classificado como: " + classificacao);
+		        } else {
+		            System.out.println("Os comprimentos dos lados não formam um triângulo válido.");
+		        }
+		        
+		        input.close();
+		    }
+		    
+		    private static String classificarTriangulo(double lado1, double lado2, double lado3) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+		    public static boolean isTrianguloValido(double lado1, double lado2, double lado3) {
+		        return (lado1 + lado2 > lado3) && (lado1 + lado3 > lado2) && (lado2 + lado3 > lado1);
